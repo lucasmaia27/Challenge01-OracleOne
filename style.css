@@ -1,0 +1,342 @@
+* {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 150%;
+}
+
+.gradient-background {
+    background: linear-gradient(60deg, #3d9697, #a71881, #24a3a5, #77abb6);
+    background-size: 300% 300%;
+    animation: gradient-animation 30s ease infinite;
+}
+
+@keyframes gradient-animation {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+body {
+    background-color: #ffffff;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
+
+}
+
+.main {
+    display: flex;
+    margin-left: 80px;
+    margin-bottom: 50px;
+}
+
+.input {
+    margin-top: 90px;
+    border: none;
+}
+
+.escreva {
+    position: static;
+    width: 320px;
+    height: 49px;
+    left: 0px;
+    top: 74px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 340;
+    font-size: 16px;
+    line-height: 150%;
+    text-align: center;
+    color: #495057;
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
+    margin: 16px 0px;
+}
+
+.message {
+    position: relative;
+    margin-top: 20px;
+    margin-bottom: 60px;
+    background-repeat: no-repeat;
+    border: none;
+    background-color: transparent;
+}
+
+.textarea-container {
+    position: relative;
+}
+
+.background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}
+
+
+.botoes {
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+    align-items: flex-start;
+    gap: 8px;
+    position: absolute;
+    width: 680px;
+    height: 67px;
+    left: 240px;
+    top: 600px
+}
+
+.encriptar {
+    margin-right: 24px;
+    /* Adiciona margem à direita do botão */
+    border: 1px solid #D8DFE8;
+    background-color: #0A3871;
+    color: #FFFFFF;
+    border-radius: 24px;
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+    /* Adicionando transição */
+}
+
+.encriptar:hover {
+    box-shadow: 0 4px 8px rgb(0, 0, 0);
+    /* Adiciona uma sombra sutil */
+    cursor: pointer;
+}
+
+.encriptar:active {
+    background-color: #0C4B8A;
+    /* Cor de fundo ao ser clicado */
+    transform: translateY(2px) scale(0.95);
+    /* Reduz e move o botão para baixo ao ser clicado */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    /* Elevação e sombra ao ser clicado */
+}
+
+
+.desencriptar {
+    border: 1px solid #0A3871;
+    background-color: #D8DFE8;
+    ;
+    color: #0A3871;
+    ;
+    border-radius: 24px;
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+    /* Adicionando transição */
+
+}
+
+.desencriptar:hover {
+    box-shadow: 0 4px 8px rgb(0, 0, 0);
+    /* Adiciona uma sombra sutil */
+    cursor: pointer;
+}
+
+.desencriptar:active {
+    background-color: #00ff6a;
+    /* Cor de fundo ao ser clicado */
+    transform: translateY(2px) scale(0.95);
+    /* Reduz e move o botão para baixo ao ser clicado */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    /* Elevação e sombra ao ser clicado */
+}
+
+.informacao {
+    font-size: 20px;
+    font-weight: bold;
+    white-space: nowrap;
+    /* Mantém o texto em uma linha única */
+}
+
+.info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 8px;
+    position: absolute;
+    width: auto;
+    /* Define a largura automática para acomodar o texto */
+    height: 20px;
+    left: 100px;
+}
+
+
+.copiar {
+    margin-left: 50px;
+    margin-right: 50px;
+    border: 1px solid #0A3871;
+    background-color: #D8DFE8;
+    color: #0A3871;
+    border-radius: 20px;
+    font-size: 30px;
+    text-align: center;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    /* Adicionando transição */
+    cursor: pointer;
+
+}
+
+.copiar:hover {
+    box-shadow: 0 4px 8px rgb(0, 0, 0);
+    /* Adiciona uma sombra sutil */
+    cursor: pointer;
+}
+
+.copiar:active {
+    background-color: #0A3871;
+    /* Cor de fundo ao ser clicado */
+    transform: translateY(2px) scale(0.95);
+    /* Reduz e move o botão para baixo ao ser clicado */
+    box-shadow: 0 2px 4px rgb(0, 0, 0);
+    /* Elevação e sombra ao ser clicado */
+}
+
+.colar {
+    border: 1px solid #0A3871;
+    background-color: #D8DFE8;
+    color: #0A3871;
+    border-radius: 20px;
+    font-size: 30px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    /* Adicionando transição */
+    cursor: pointer;
+
+}
+
+.colar:hover {
+    box-shadow: 0 4px 8px rgb(0, 0, 0);
+    /* Adiciona uma sombra sutil */
+    cursor: pointer;
+}
+
+.colar:active {
+    background-color: #0A3871;
+    /* Cor de fundo ao ser clicado */
+    transform: translateY(2px) scale(0.95);
+    /* Reduz e move o botão para baixo ao ser clicado */
+    box-shadow: 0 2px 4px rgb(0, 0, 0);
+    /* Elevação e sombra ao ser clicado */
+}
+
+
+.lado2 {
+    position: absolute;
+    width: 380px;
+    height: 700px;
+    left: 1025px;
+    top: 50px;
+    backdrop-filter: blur(20px);
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.3);
+    /* Ajuste a sombra conforme necessário */
+    border-radius: 32px;
+    background-color: rgba(255, 255, 255, 0.3);
+    /* Cor de fundo semitransparente */
+}
+
+
+.texto1 {
+    margin-left: 15px;
+    width: 336px;
+    height: 58px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 120%;
+    text-align: center;
+    color: #000000;
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+}
+
+.texto2 {
+    width: 320px;
+    height: 48px;
+    margin-left: 15px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 100%;
+    text-align: center;
+    color: #1b1b1b;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    backdrop-filter: blur(10px);
+    color: rgb(0, 0, 0);
+    text-align: center;
+    font-size: 20px;
+    font-family: 'Inter', sans-serif;
+    font-weight: bolder;
+    justify-content: space-around;
+}
+
+.fa-linkedin {
+    text-align: left;
+    padding: 10px;
+    color: rgb(4, 90, 227);
+    font-weight: bold;
+    width: 30px;
+    height: 30px;
+}
+
+.fa-github {
+    text-align: left;
+    width: 30px;
+    height: 30px;
+    padding: 10px;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    width: 30px;
+    height: 30px;
+}
+
+@media screen and (max-width: 480px) {
+
+    .input-texto,
+    .escreva,
+    .botoes,
+    .informacao,
+    .lado2 {
+        width: auto;
+    }
+
+    header {
+        text-align: center;
+    }
+
+    main {
+        position: static;
+    }
+
+    .texto1,
+    .texto2,
+    .message {
+        width: 100%;
+    }
+}

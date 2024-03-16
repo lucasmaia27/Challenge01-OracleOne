@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&family=Open+Sans:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="./assets/logo-icon-alura.ico" type="image/logo-alura">
+    <title>Challenge 01 - Oracle ONE</title>
+</head>
+
+<body class="gradient-background">
+    <header>
+        <img src="./assets/logo.png" alt="Logo da alura com a inicial da letra a" class="logo">
+    </header>
+
+    <main class="main">
+
+        <section>
+            <textarea class="input" cols="40" rows="6" placeholder="Digite seu texto..."></textarea>
+            <div class="info">
+                <img src="/assets/!.png" class="img-alerta">
+                <h6 class="informacao">Apenas letras minúsculas e sem acento.</h6>
+            </div>
+            <div class="botoes">
+                <button class="encriptar" onclick="btnEncriptar()">Criptografar</button>
+                <button class="desencriptar" onclick="btnDesencriptar()">Descriptografar</button>
+            </div>
+        </section>
+
+        <section class="escreva">
+
+            <div class="lado2">
+                <div class="textarea-container">
+                    <textarea class="message" cols="15" rows="6"></textarea>
+                    <img src="/assets/boneco-removebg-preview.png" class="background-image" alt="Imagem de fundo">
+                </div>
+                <p class="texto1">Nenhuma mensagem encontrada</p>
+                <p class="texto2"> Digite um texto que você deseja criptografar ou descriptografar.</p>
+                <button class="copiar" onclick="btnCopy()">Copiar</button>
+            </div>
+
+        </section>
+    </main>
+
+    <br>
+
+    <footer class="footer">
+        Desenvolvido por Lucas Del-Aguilla
+        <a href="https://github.com/lucasmaia27" target="_blank" class="fa fa-github"></a>
+        <a href="https://www.linkedin.com/in/lucas-del-aguilla-maia-dev" target="_blank" class="fa fa-linkedin"></a>
+    </footer>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>

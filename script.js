@@ -76,4 +76,5 @@ function btnCopy() {
     const messageTextArea = document.querySelector('.message');
     messageTextArea.select();
     document.execCommand('copy');
+    toggleContentVisibility(); // Atualiza a exibição do botão copiar
 }
